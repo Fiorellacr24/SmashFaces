@@ -65,4 +65,3 @@ function comprobar() {
 $(document).ready(function() {
     $(".comprobar").click(comprobar);
 });*/
-
