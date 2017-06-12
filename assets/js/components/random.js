@@ -3,7 +3,7 @@
 const Coder = (coder, update) =>{
     const parent = $("<div class='container view-play f-roboto'></div>")
     const containerCoder = $("<div class='cont-coder col-xs-12 col-sm-12 col-md-4 col-lg-4'></div>");
-    const imgCoder = $("<img src='assets/img/$state.sede' class='img-responsive img-coder'></img>");
+    const imgCoder = $("<img src='assets/img/' class='img-responsive img-coder'></img>");
     //<img src="assets/img/mexico/Alma%20Patricia%20Jimenez.JPG" alt="">
     const containerInput = $("<div class='cont-input col-xs-12 col-sm-12 col-md-6 col-lg-6'></div>");
     const label = $("<label class='white f-rokkitt'>Ingresa su nombre:</label><br>");
