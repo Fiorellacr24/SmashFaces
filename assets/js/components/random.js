@@ -21,7 +21,6 @@ const Coder = (coder, update) =>{
 
 
     $('.select').on('change', _ =>{
-        //alert("Hola");
         parent.show();
 
         select = $(this).val();
