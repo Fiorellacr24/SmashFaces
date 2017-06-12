@@ -10,8 +10,6 @@ const render = (root)=>{
 const state = {
 	mexico : mexico,
     peru : peru,
-    sede : '',
-    points : 0,
 	selectedSede : null
 };
 
