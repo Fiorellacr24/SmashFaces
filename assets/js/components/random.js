@@ -8,7 +8,7 @@ const Coder = (coder, update) =>{
     const containerInput = $("<div class='cont-input col-xs-12 col-sm-12 col-md-6 col-lg-6'></div>");
     const label = $("<label class='white f-rokkitt'>Ingresa su nombre:</label><br>");
     const nombre = $("<input class='form-control' type='text' placeholder='Nombre' id='focusedInput'>");
-    const comprobar = $("<button type='button' class='btn btn-warning comprobar'>COMPROBAR</button>")
+    const comprobar = $("<button type='button' class='btn btn-warning comprobar'>COMPROBAR</button>");
 
     parent.hide();
     containerCoder.append(imgCoder);

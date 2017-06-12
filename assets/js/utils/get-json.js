@@ -1,6 +1,4 @@
 'use strict';
-
-
 const getJSON = (url, cb) => {
 
   const xhr = new XMLHttpRequest();
