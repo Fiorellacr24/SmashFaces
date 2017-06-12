@@ -23,14 +23,14 @@ const Coder = (coder, update) =>{
     $('.select').on('change', _ =>{
         parent.show();
 
-        select = $(this).val();
+        /*select = $(this).val();
         if(select === Lima){
             state.peru = peru;
             mostrarCoderPeru(coder, imgCoder, update);
         }else{
             state.mexico = mexico;
             mostrarCoderMex(coder, imgCoder, update);
-        }
+        }*/
     });
     return parent;
 }
