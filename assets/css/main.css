@@ -23,12 +23,12 @@ h1{
 	float: right;
 	font-weight: 600;
 }
-@media (min-width: 768px){
+@media (min-width: 1024px){
 	.form-inline .form-group select{
-		width: 180px;
+		width: 200px;
 	}
 	.view-play{
-		margin-left: 100px;
+		margin-left: 140px;
 	}
 }
 .cont-coder{

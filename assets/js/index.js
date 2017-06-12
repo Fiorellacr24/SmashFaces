@@ -12,6 +12,8 @@ const state = {
 	selectedSede : null
 };
 
+var select = $('select');
+
 $(_ => {
 	getJSON('coders.json', (err, json)=>{
 		if (err){ return alert(err.message);}
