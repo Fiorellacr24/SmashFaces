@@ -3,7 +3,8 @@
 const Coder = (coder, update) =>{
     const parent = $("<div class='container view-play f-roboto'></div>")
     const containerCoder = $("<div class='cont-coder col-xs-12 col-sm-12 col-md-4 col-lg-4'></div>");
-    const imgCoder = $("<img class='img-responsive img-coder'></img>");
+    const imgCoder = $("<img src='assets/img/$state.sede' class='img-responsive img-coder'></img>");
+    //<img src="assets/img/mexico/Alma%20Patricia%20Jimenez.JPG" alt="">
     const containerInput = $("<div class='cont-input col-xs-12 col-sm-12 col-md-6 col-lg-6'></div>");
     const label = $("<label class='white f-rokkitt'>Ingresa su nombre:</label><br>");
     const nombre = $("<input class='form-control' type='text' placeholder='Nombre' id='focusedInput'>");
@@ -22,23 +23,36 @@ const Coder = (coder, update) =>{
     $('.select').on('change', _ =>{
         //alert("Hola");
         parent.show();
-        mostrarCoder(coder, imgCoder, update);
+
+        select = $(this).val();
+        if(select === Lima){
+            state.peru = peru;
+            mostrarCoderPeru(coder, imgCoder, update);
+        }else{
+            state.mexico = mexico;
+            mostrarCoderMex(coder, imgCoder, update);
+        }
     });
     return parent;
 }
 
-const mostrarCoder = (coder, imgCoder, update) =>{
-	imgCoder.attr("src", coder[Math.floor(Math.random()* state.mexico.length)].image);
+const mostrarCoderPeru = (coder, imgCoder, update) =>{
+    imgCoder.attr("src", coder[Math.floor(Math.random()* (state.peru).length)].image);
 
-	return imgCoder;
+    return imgCoder;
 }
 
+const mostrarCoderMex = (coder, imgCoder, update) =>{
+    imgCoder.attr("src", coder[Math.floor(Math.random()* (state.mexico).length)].image);
 
-function filter() {
+    return imgCoder;
+}
+
+/*function filter() {
     let selectName = "";
-    //selectName = (lugar == 0) ? peru[aleatorio].sede : mexico[aleatorio].sede;
+    selectName = (sede == 0) ? peru[i].sede : mexico[i].sede;
     return filter;
-}
+}*/
 
 function comprobar() {
     if (getInputValue() === selectName()) {
