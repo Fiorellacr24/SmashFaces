@@ -3,7 +3,7 @@
 const Coder = (coder, update) =>{
     const parent = $("<div class='container view-play f-roboto'></div>")
     const containerCoder = $("<div class='cont-coder col-xs-12 col-sm-12 col-md-4 col-lg-4'></div>");
-    const imgCoder = $("<img src='assets/img/' class='img-responsive img-coder'></img>");
+    const imgCoder = $("<img class='img-responsive img-coder'></img>");
     //<img src="assets/img/mexico/Alma%20Patricia%20Jimenez.JPG" alt="">
     const containerInput = $("<div class='cont-input col-xs-12 col-sm-12 col-md-6 col-lg-6'></div>");
     const label = $("<label class='white f-rokkitt'>Ingresa su nombre:</label><br>");
@@ -35,7 +35,7 @@ const Coder = (coder, update) =>{
     return parent;
 }
 
-const mostrarCoderPeru = (coder, imgCoder, update) =>{
+/*const mostrarCoderPeru = (coder, imgCoder, update) =>{
     imgCoder.attr("src", coder[Math.floor(Math.random()* (state.peru).length)].image);
 
     return imgCoder;
@@ -47,11 +47,11 @@ const mostrarCoderMex = (coder, imgCoder, update) =>{
     return imgCoder;
 }
 
-/*function filter() {
+function filter() {
     let selectName = "";
     selectName = (sede == 0) ? peru[i].sede : mexico[i].sede;
     return filter;
-}*/
+}
 
 function comprobar() {
     if (getInputValue() === selectName()) {
@@ -64,5 +64,5 @@ function comprobar() {
 
 $(document).ready(function() {
     $(".comprobar").click(comprobar);
-});
+});*/
 
