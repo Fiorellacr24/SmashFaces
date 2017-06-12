@@ -8,17 +8,14 @@ const render = (root)=>{
 };
 
 const state = {
-	coder : null,
+	mexico : mexico,
+    peru : peru,
 	selectedSede : null
 };
 
 var select = $('select');
 
 $(_ => {
-	getJSON('coders.json', (err, json)=>{
-		if (err){ return alert(err.message);}
-		state.coder = json;
-		const root = $('.root');
-		render(root);
-	});
+const root = $('.root');
+render(root);
 });
