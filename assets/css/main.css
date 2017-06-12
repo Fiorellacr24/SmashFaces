@@ -1,0 +1,27 @@
+.f-roboto{
+	font-family: 'Roboto', sans-serif;
+}
+.f-rokkitt{
+	font-family: 'Rokkitt', serif;
+}
+hr{
+	width: 100px;
+	float: left;
+	border-top: 2px solid black;
+	margin: 0;
+}
+h1{
+	margin-bottom: 0;
+}
+.form-control{
+	background-color: #ccc;
+}
+.form-inline .form-group label:nth-child(2){
+	float: right;
+	font-weight: 600;
+}
+@media (min-width: 768px){
+	.form-inline .form-group select{
+		width: 180px;
+	}
+}
